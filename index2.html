@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Living Tips</title>
+  <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Healthy Living Tips</h1>
+    <p>Your guide to a healthier lifestyle</p>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+  </header>
+  <section id="nutrition">
+    <h2>Nutrition</h2>
+    <p>Discover healthy eating habits and nutritious recipes.</p>
+  </section>
+  <section id="exercise">
+    <h2>Exercise</h2>
+    <p>Get moving with our fitness tips and workout routines.</p>
+  </section>
+  <section id="mental-wellness">
+    <h2>Mental Wellness</h2>
+    <p>Learn techniques for reducing stress and improving mental health.</p>
+  </section>
+  <footer>
+    <p>Subscribe to our newsletter for weekly health tips!</p>
+    <form action="subscribe.php" method="post">
+      <input type="email" name="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+  <script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
